@@ -14,7 +14,7 @@ modcloth_data = pd.DataFrame(jsonData)
 
 def height_converter(x):
     '''converts heights'''
-    if pd.isna(x): 
+    if pd.isna(x):
         return x
     else:
         split_x=x.split('ft'); height_in_inches_converted_from_string=int(split_x[0])*12
